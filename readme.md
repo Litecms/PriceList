@@ -40,8 +40,7 @@ Language
 
 Views public and admin
 
-    php artisan vendor:publish --provider="Litecms\PriceList\Providers\PriceListServiceProvider" --tag="view-public"
-    php artisan vendor:publish --provider="Litecms\PriceList\Providers\PriceListServiceProvider" --tag="view-admin"
+    php artisan vendor:publish --provider="Litecms\PriceList\Providers\PriceListServiceProvider" --tag="view"
 
 Publish admin views only if it is necessary.
 
