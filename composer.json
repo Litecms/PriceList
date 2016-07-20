@@ -1,0 +1,21 @@
+{
+    "name": "litecms/pricelist",
+    "description": "PriceList package for litecms.",
+    "keywords": ["lavalite", "PriceList"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lavalite",
+            "email": "info@lavalite.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Litecms\\PriceList\\": "src/Litecms/PriceList"
+        }
+    },
+    "minimum-stability": "dev"
+}
