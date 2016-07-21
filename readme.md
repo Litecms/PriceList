@@ -1,4 +1,4 @@
-This is a Laravel 5 package that provides pricelist management facility for lavalite framework.
+This is a Litecms 5 package that provides pricelist management facility for lavalite framework.
 
 ## Installation
 
@@ -34,13 +34,18 @@ Configuration
 
     php artisan vendor:publish --provider="Litecms\PriceList\Providers\PriceListServiceProvider" --tag="config"
 
-Language
+Language files
 
     php artisan vendor:publish --provider="Litecms\PriceList\Providers\PriceListServiceProvider" --tag="lang"
 
-Views public and admin
+Views files
 
-    php artisan vendor:publish --provider="Litecms\PriceList\Providers\PriceListServiceProvider" --tag="view"
+    php artisan vendor:publish --provider="Litecms\PriceList\Providers\PriceListServiceProvider" --tag="views"
+
+Public folders
+
+    php artisan vendor:publish --provider="Litecms\PriceList\Providers\PriceListServiceProvider" --tag="public"
+   
 
 Publish admin views only if it is necessary.
 

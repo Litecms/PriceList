@@ -1,4 +1,5 @@
-<div class='col-md-4 col-sm-6'>
+                {!! Form::hidden('upload_folder')!!}
+                <div class='col-md-4 col-sm-6'>
                        {!! Form::text('title')
                        -> label(trans('pricelist::pricelist.label.title'))
                        -> placeholder(trans('pricelist::pricelist.placeholder.title'))!!}

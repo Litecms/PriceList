@@ -1,11 +1,11 @@
 {
     "name": "litecms/pricelist",
     "description": "PriceList package for litecms.",
-    "keywords": ["lavalite", "PriceList"],
+    "keywords": ["lavalite","litecms", "PriceList"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Lavalite",
+            "name": "Litecms",
             "email": "info@lavalite.org"
         }
     ],

@@ -5,8 +5,12 @@ return [
     /**
      * Singlular and plural name of the module
      */
-    'name'        => 'PriceList',
-    'names'       => 'PriceLists',
+    'name'        => 'Pricelist',
+    'names'       => 'Pricelists',
+    'user_name'   => 'My <span>Pricelist</span>',
+    'user_names'  => 'My <span>Pricelists</span>',
+    'create'      => 'Create My Pricelist',
+    'edit'        => 'Update My Pricelist',
 
     /**
      * Options for select/radio/check.
