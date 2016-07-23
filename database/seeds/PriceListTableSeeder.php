@@ -6,7 +6,7 @@ class PriceListTableSeeder extends Seeder
 {
     public function run()
     {
-        DB::table('pricelists')->insert([
+        DB::table('price_lists')->insert([
 
             [
                 'title'      => 'BASIC',

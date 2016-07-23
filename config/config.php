@@ -19,7 +19,7 @@ return [
 
     'pricelist' => [
         'model'         => 'Litecms\PriceList\Models\PriceList',
-        'table'         => 'pricelists',
+        'table'         => 'price_lists',
         'presenter'     => \Litecms\PriceList\Repositories\Presenter\PriceListItemPresenter::class,
         'hidden'        => [],
         'visible'       => [],

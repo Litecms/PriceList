@@ -16,7 +16,7 @@ class CreatePriceListsTable extends Migration
         /*
          * Table: pricelists
          */
-        Schema::create('pricelists', function ($table) {
+        Schema::create('price_lists', function ($table) {
             $table->increments('id');
             $table->string('title', 255)->nullable();
             $table->string('sub_title', 255)->nullable();
@@ -41,6 +41,6 @@ class CreatePriceListsTable extends Migration
 
     public function down()
     {
-        Schema::drop('pricelists');
+        Schema::drop('price_lists');
     }
 }
