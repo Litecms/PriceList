@@ -57,7 +57,7 @@ class PriceListTableSeeder extends Seeder
                 'description' => null,
                 'icon'        => 'fa fa-usd',
                 'target'      => null,
-                'order'       => 1,
+                'order'       => 210,
                 'status'      => 1,
             ],
 
@@ -69,7 +69,7 @@ class PriceListTableSeeder extends Seeder
                 'description' => null,
                 'icon'        => null,
                 'target'      => null,
-                'order'       => 1,
+                'order'       => 210,
                 'status'      => 1,
             ],
 
