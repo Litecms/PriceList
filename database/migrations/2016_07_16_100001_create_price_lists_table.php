@@ -21,12 +21,13 @@ class CreatePriceListsTable extends Migration
             $table->string('title', 255)->nullable();
             $table->string('sub_title', 255)->nullable();
             $table->text('features')->nullable();
-            $table->decimal('price', 10,2)->nullable();
-            $table->enum('type', ['Day','Month','Year'])->nullable();
+            $table->decimal('price', 10, 2)->nullable();
+            $table->enum('type', ['Day', 'Month', 'Year'])->nullable();
             $table->text('image')->nullable();
             $table->string('slug', 200)->nullable();
             $table->enum('status', ['draft', 'published', 'hidden', 'suspended', 'spam'])->default('draft')->nullable();
             $table->integer('user_id')->nullable();
+            $table->string('user_type', 100)->nullable();
             $table->string('upload_folder', 100)->nullable();
             $table->softDeletes();
             $table->nullableTimestamps();
@@ -34,10 +35,10 @@ class CreatePriceListsTable extends Migration
     }
 
     /*
-    * Reverse the migrations.
-    *
-    * @return void
-    */
+     * Reverse the migrations.
+     *
+     * @return void
+     */
 
     public function down()
     {

@@ -48,6 +48,6 @@
                 @if(!empty($pricelist['image']))
                 <div class='col-md-12 col-sm-12'>
                     <label>&nbsp;&nbsp;Image</label><br/>
-                    <img src="{!!URL::to('image/gl/'.@$pricelist['image']['efolder'])!!}/{!!@$pricelist['image']['file']!!}">
+                    <img src="{!!url(@$pricelist->defaultImage('pricelist.sm','images'))!!}">
                 </div>
                 @endif

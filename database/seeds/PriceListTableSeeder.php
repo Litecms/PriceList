@@ -9,6 +9,8 @@ class PriceListTableSeeder extends Seeder
         DB::table('price_lists')->insert([
 
             [
+                'user_id'    => '1',
+                'user_type'  => 'App\\User',
                 'title'      => 'BASIC',
                 'slug'       => 'basic',
                 'sub_title'  => '',
@@ -21,6 +23,8 @@ class PriceListTableSeeder extends Seeder
                 'deleted_at' => null,
             ],
             [
+                'user_id'    => '1',
+                'user_type'  => 'App\\User',
                 'title'      => 'STANDARD',
                 'slug'       => 'standard',
                 'sub_title'  => '',
@@ -33,6 +37,8 @@ class PriceListTableSeeder extends Seeder
                 'deleted_at' => null,
             ],
             [
+                'user_id'    => '1',
+                'user_type'  => 'App\\User',
                 'title'      => 'PREMIUM',
                 'slug'       => 'premium',
                 'sub_title'  => '',
