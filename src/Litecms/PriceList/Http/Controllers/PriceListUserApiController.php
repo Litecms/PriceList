@@ -105,6 +105,7 @@ class PriceListUserApiController extends BaseController
         try {
             $attributes             = $request->all();
             $attributes['user_id']  = user_id('admin.api');
+            $attributes['user_type'] = user_type();
             $pricelist          = $this->repository->create($attributes);
             $pricelist          = $pricelist->presenter();
             $pricelist['code']  = 2004;

@@ -117,6 +117,7 @@ class PriceListAdminController extends BaseController
         try {
             $attributes             = $request->all();
             $attributes['user_id']  = user_id('admin.web');
+            $attributes['user_type'] = user_type();
             $pricelist          = $this->repository->create($attributes);
 
             return response()->json([

@@ -27,7 +27,7 @@ return [
         'slugs'         => ['slug' => 'name'],
         'dates'         => ['deleted_at'],
         'appends'       => [],
-        'fillable'      => ['user_id', 'title', 'sub_title', 'features', 'price', 'type', 'image', 'upload_folder'],
+        'fillable'      => ['user_id', 'user_type', 'title', 'sub_title', 'features', 'price', 'type', 'image', 'upload_folder'],
         'translate'     => [],
 
         'upload_folder' => '/pricelist/pricelist',
