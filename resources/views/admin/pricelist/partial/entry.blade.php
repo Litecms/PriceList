@@ -39,8 +39,8 @@
 
 <div class='col-md-6 col-sm-12'>
       <label>Image</label>
-      {!! Filer::uploader('image',@$pricelist->getUploadURL('image'),1)!!}
-      {!! Filer::editor('image', @$pricelist['image'],1) !!}
+      {!!$pricelist->fileUpload('image')!!}
+      {!!$pricelist->fileEdit('image') !!}
 </div>
 
 </div>

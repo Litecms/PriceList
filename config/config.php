@@ -30,7 +30,7 @@ return [
         'fillable'      => ['user_id', 'title', 'sub_title', 'features', 'price', 'type', 'image', 'upload_folder'],
         'translate'     => [],
 
-        'upload-folder' => '/uploads/pricelist/pricelist',
+        'upload_folder' => '/pricelist/pricelist',
         'uploads'       => [
             'single'   => [],
             'multiple' => [],
