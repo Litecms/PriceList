@@ -1,0 +1,36 @@
+{
+    "name": "litecms/pricelist",
+    "description": "Pricelist package for litecms.",
+    "keywords": ["lavalite", "Pricelist"],
+    "license": "MIT",
+    "type": "lavalite-package",
+
+    "authors": [
+        {
+            "name": "Lavalite",
+            "email": "info@lavalite.org"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds"
+        ],
+        "psr-4": {
+            "Litecms\\Pricelist\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Litecms\\Pricelist\\Providers\\PricelistServiceProvider"
+            ],
+            "aliases": {
+                "Pricelist"    : "Litecms\\Pricelist\\Facades\\Pricelist"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
