@@ -55,19 +55,7 @@ Priority support', 'price' => '1000', 'type' => 'Year', 'image' => '[{"title":"D
             ],
 
             [
-                'parent_id'   => 2,
-                'key'         => null,
-                'url'         => 'user/pricelist/price_list',
-                'name'        => 'PriceList',
-                'description' => null,
-                'icon'        => 'icon-book-open',
-                'target'      => null,
-                'order'       => 190,
-                'status'      => 1,
-            ],
-
-            [
-                'parent_id'   => 3,
+                'parent_id'   => 4,
                 'key'         => null,
                 'url'         => 'price_list',
                 'name'        => 'PriceList',
