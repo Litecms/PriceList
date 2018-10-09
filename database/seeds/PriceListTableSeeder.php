@@ -5,7 +5,7 @@ namespace Litecms;
 use DB;
 use Illuminate\Database\Seeder;
 
-class PriceListTableSeeder extends Seeder
+class PricelistTableSeeder extends Seeder
 {
     public function run()
     {
