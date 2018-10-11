@@ -48,7 +48,7 @@ class PriceListResourceController extends BaseController
 
         $price_lists = $this->repository->paginate();
 
-        return $this->response->title(trans('pricelist::price_list.names'))
+        return $this->response->setMetaTitle(trans('pricelist::price_list.names'))
             ->view('pricelist::price_list.index', true)
             ->data(compact('price_lists'))
             ->output();
@@ -71,7 +71,7 @@ class PriceListResourceController extends BaseController
             $view = 'pricelist::price_list.new';
         }
 
-        return $this->response->title(trans('app.view') . ' ' . trans('pricelist::price_list.name'))
+        return $this->response->setMetaTitle(trans('app.view') . ' ' . trans('pricelist::price_list.name'))
             ->data(compact('price_list'))
             ->view($view, true)
             ->output();
@@ -88,7 +88,7 @@ class PriceListResourceController extends BaseController
     {
 
         $price_list = $this->repository->newInstance([]);
-        return $this->response->title(trans('app.new') . ' ' . trans('pricelist::price_list.name')) 
+        return $this->response->setMetaTitle(trans('app.new') . ' ' . trans('pricelist::price_list.name')) 
             ->view('pricelist::price_list.create', true) 
             ->data(compact('price_list'))
             ->output();
@@ -134,7 +134,7 @@ class PriceListResourceController extends BaseController
      */
     public function edit(PriceListRequest $request, PriceList $price_list)
     {
-        return $this->response->title(trans('app.edit') . ' ' . trans('pricelist::price_list.name'))
+        return $this->response->setMetaTitle(trans('app.edit') . ' ' . trans('pricelist::price_list.name'))
             ->view('pricelist::price_list.edit', true)
             ->data(compact('price_list'))
             ->output();

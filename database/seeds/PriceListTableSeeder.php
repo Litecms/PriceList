@@ -57,7 +57,19 @@ Priority support', 'price' => '1000', 'type' => 'Year', 'image' => '[{"title":"D
             [
                 'parent_id'   => 4,
                 'key'         => null,
-                'url'         => 'price_list',
+                'url'         => 'pricelists',
+                'name'        => 'PriceList',
+                'description' => null,
+                'icon'        => null,
+                'target'      => null,
+                'order'       => 190,
+                'status'      => 1,
+            ],
+
+            [
+                'parent_id'   => 5,
+                'key'         => null,
+                'url'         => 'pricelists',
                 'name'        => 'PriceList',
                 'description' => null,
                 'icon'        => null,
