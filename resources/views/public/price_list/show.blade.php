@@ -1,10 +1,10 @@
-            @include('pricelist::public.price_list.partial.header')
+            @include('pricelist::price_list.partial.header')
 
             <section class="single">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
-                            @include('pricelist::public.price_list.partial.aside')
+                            @include('pricelist::price_list.partial.aside')
                         </div>
                         <div class="col-md-9 ">
                             <div class="area">

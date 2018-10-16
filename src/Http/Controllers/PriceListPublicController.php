@@ -39,7 +39,7 @@ class PriceListPublicController extends BaseController
 
 
         return $this->response->setMetaTitle(trans('pricelist::price_list.names'))
-            ->view('pricelist::public.price_list.index')
+            ->view('pricelist::price_list.index')
             ->data(compact('price_lists'))
             ->output();
     }
@@ -61,7 +61,7 @@ class PriceListPublicController extends BaseController
 
 
         return $this->response->setMetaTitle(trans('pricelist::price_list.names'))
-            ->view('pricelist::public.price_list.index')
+            ->view('pricelist::price_list.index')
             ->data(compact('price_lists'))
             ->output();
     }
@@ -81,7 +81,7 @@ class PriceListPublicController extends BaseController
         })->first(['*']);
 
         return $this->response->setMetaTitle($price_list->name . trans('pricelist::price_list.name'))
-            ->view('pricelist::public.price_list.show')
+            ->view('pricelist::price_list.show')
             ->data(compact('price_list'))
             ->output();
     }

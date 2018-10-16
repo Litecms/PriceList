@@ -1,4 +1,4 @@
-@include('pricelist::public.price_list.partial.header')
+@include('pricelist::price_list.partial.header')
 <section class="content bg-grey">
     <div class="container">
         <div class="price-list">
